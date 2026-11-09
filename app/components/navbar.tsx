@@ -47,8 +47,8 @@ function Navbar() {
     <header className="fixed left-0 top-0 z-50 w-full px-4 pt-5 md:px-8">
       <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-[var(--border)] bg-[var(--surface)]/85 px-4 py-3 shadow-xl shadow-black/5 backdrop-blur-2xl transition-all duration-300 md:px-7">
         {/* Logo */}
-        <Link
-          href="/"
+        <a
+          href="#"
           onClick={() => setMenuOpen(false)}
           className="group flex shrink-0 items-center gap-3"
         >
@@ -65,7 +65,7 @@ function Navbar() {
               Frontend Developer
             </p>
           </div>
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-1 rounded-full border border-[var(--border)] bg-[var(--card)] p-1.5 lg:flex">
@@ -122,8 +122,8 @@ function Navbar() {
           </button>
 
           {/* Contact Button */}
-          <Link
-            href="/contact"
+          <a
+            href="#contact"
             className="group hidden cursor-pointer items-center gap-2 rounded-full bg-[#C7F36B] px-5 py-3 text-sm font-bold text-black shadow-lg shadow-[#C7F36B]/10 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-xl active:scale-95 lg:flex"
           >
             Let's Talk
@@ -131,7 +131,7 @@ function Navbar() {
               size={17}
               className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             />
-          </Link>
+          </a>
 
           {/* Mobile Menu */}
           <button
@@ -159,7 +159,7 @@ function Navbar() {
             const isActive = pathname === link.href;
 
             return (
-              <Link
+              <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
@@ -177,12 +177,12 @@ function Navbar() {
                     isActive ? "translate-x-0 opacity-100" : "opacity-40"
                   }`}
                 />
-              </Link>
+              </a>
             );
           })}
 
-          <Link
-            href="/contact"
+          <a
+            href="contact"
             onClick={() => setMenuOpen(false)}
             className="group mt-2 flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#C7F36B] py-3.5 text-sm font-bold text-black transition-all duration-300 hover:bg-white active:scale-95"
           >
@@ -191,7 +191,7 @@ function Navbar() {
               size={17}
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </header>

@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -87,7 +86,7 @@ const projects = [
 export default function Projects() {
   return (
     <section
-      id="projects"
+      
       className="relative overflow-hidden px-6 py-28 md:px-12 lg:py-36"
     >
       {/* Background effects */}
@@ -96,7 +95,7 @@ export default function Projects() {
 
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Section Header */}
-        <div className="mb-16 flex flex-col justify-between gap-8 md:mb-20 md:flex-row md:items-end">
+        <div id="projects" className="mb-16 flex flex-col justify-between gap-8 md:mb-20 md:flex-row md:items-end">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -273,17 +272,6 @@ export default function Projects() {
                 Have an idea or an opportunity? I would love to hear about it.
               </p>
             </div>
-
-            <a
-              href="#"
-              className="group inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#C7F36B] px-7 py-4 text-sm font-bold text-black transition-all duration-300 hover:-translate-y-1 hover:bg-white"
-            >
-              Let&apos;s Talk
-              <ArrowUpRight
-                size={19}
-                className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-              />
-            </a>
           </div>
         </motion.div>
       </div>

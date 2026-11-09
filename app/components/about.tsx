@@ -194,7 +194,7 @@ export default function AboutPage() {
                 <div className="relative z-10 text-center">
                   <div className="mx-auto flex h-36 w-36 items-center justify-center rounded-[35px] border border-[#C7F36B]/40 bg-[#C7F36B]/10 shadow-[0_0_70px_rgba(199,243,107,0.12)]">
                     <span className="text-6xl font-black tracking-tighter text-[#C7F36B]">
-                      AA.
+                      A.A
                     </span>
                   </div>
 
